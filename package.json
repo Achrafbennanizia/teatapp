@@ -1,9 +1,12 @@
 {
   "name": "teatapp",
   "version": "1.0.0",
+  "homepage": "https://Achrafbennaniziat.github.io/app_teat",
   "description": "learn to program",
   "main": "server.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server",
     "dev": "nodemon server.js"
@@ -25,6 +28,7 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "nodemon": "^3.0.2"
   }
 }
